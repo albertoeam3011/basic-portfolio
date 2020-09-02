@@ -9,7 +9,7 @@
 <body>
 	
 	<header>
-		<section id="mainPage">
+		<section id="logoSection">
 			<div id="title">
 				<h1>Alberto Alvarez</h1>
 			</div>
@@ -36,14 +36,14 @@
 		<div id="Contact">
 			<h2>Contact</h2>
 
-			<form>
+			<form action="send.php" method="POST">
 				<label for="fullName">Name</label>
 				<br>
 				<input type="text" name="fullName" id="fullName" placeholder="First and Last name" required>
 				<br>
 				<label for="email">Email</label>
 				<br>
-				<input type="email" id="email" name="email" placeholder="youremailaddress@mail.com" required>
+				<input type="email" id="email" name="email" placeholder="youremailaddress@example.com" required>
 				<br>
 				<label for="subject">Subject</label>
 				<br>
@@ -51,7 +51,7 @@
 				<br>
 				<label for="message">Message</label>
 				<br>
-				<input type="text" name="message" id="message">
+				<input type="text" name="message" id="message" required>
 				<br>
 				<input type="button"  name="send" id="send" value="Send">
 			</form>
@@ -62,9 +62,12 @@
 
 	<section id="socialLinks">
 		<h2>Connect with me</h2>
-		<img src="assets/images/github_icon.png" id="githubIcon">
-		<img src="assets/images/linkedin_icon.png" id="linkedinIcon">
-		<img src="assets/images/stackoverflow_icon.png" id="stackoverflowIcon">
+		<a href="#" target="_blank"><img src="assets/images/github_icon.png" id="githubIcon"></a>
+		<a href="#" target="_blank"><img src="assets/images/linkedin_icon.png" id="linkedinIcon"></a>
+		<a href="#" target="_blank"><img src="assets/images/stackoverflow_icon.png" id="stackoverflowIcon"></a>
 	</section>
 
+	<footer id="pageFooter">
+		<p>Copyright Alberto Alvarez 2020</p>
+	</footer>
 </body>
